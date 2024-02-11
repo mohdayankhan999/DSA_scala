@@ -44,5 +44,18 @@ Top Leetcode Problem Solutions in Scala
   <a href="https://leetcode.com/problems/house-robber/description/?envType=study-plan-v2&envId=top-interview-150">House Robber</a><br>
     <a href="https://leetcode.com/problems/clone-graph/?envType=study-plan-v2&envId=top-interview-150">Clone Graph</a><br>
 
+<h2>Day 6<h2>
+<a href="https://leetcode.com/problems/path-sum/description/?envType=study-plan-v2&envId=top-interview-150">Path Sum</a><br>
+<a href="https://leetcode.com/problems/number-of-islands/description/?envType=study-plan-v2&envId=top-interview-150">Number of Islands</a><br>
+<a href="https://leetcode.com/problems/triangle/description/?envType=study-plan-v2&envId=top-interview-150">Triangle</a><br>
+<a href="https://leetcode.com/problems/min-stack/description/?envType=study-plan-v2&envId=top-interview-150">Min Stack</a><br>
+
+<h2>Day 7<h2>
+<a href="https://leetcode.com/problems/edit-distance/description/?envType=study-plan-v2&envId=top-interview-150">Edit Distance</a><br>
+<a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150">Find Minimum in Rotated Sorted Array</a><br>
+<a href="https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/?envType=study-plan-v2&envId=top-interview-150">Convert Sorted Array to Binary Search Tree</a><br>
+<a href="https://leetcode.com/problems/symmetric-tree/?envType=study-plan-v2&envId=top-interview-150">Symmetric Tree</a><br>
+
+
 
 	
