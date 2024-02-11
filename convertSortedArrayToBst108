@@ -1,0 +1,11 @@
+object Solution {
+    def sortedArrayToBST(nums: Array[Int]): TreeNode = {
+         def convert(left: Int, right: Int): TreeNode = {
+             if (left > right) return null
+             val mid = (right - left)/2 + left
+             TreeNode(nums(mid),convert(left, mid - 1),convert(mid + 1, right))
+         }
+        return convert(0, nums.length - 1)
+        
+    }
+}
