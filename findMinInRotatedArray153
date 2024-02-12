@@ -1,0 +1,19 @@
+object Solution {
+ 
+
+    def findMin(nums: Array[Int]): Int = {
+        def findMin_(left: Int, right: Int): Int = {
+            if (left >= right) return nums(left) min nums(right) 
+            val mid = (right - left)/2 + left
+            if (nums(mid) < nums(left)) {
+                findMin_(left,mid)
+            } else if (nums(mid) < nums(right)) {
+                nums(left)
+            } else {
+                findMin_(mid+1,right)
+            }
+            
+        }
+        findMin_(0,nums.length-1)
+    }
+}
