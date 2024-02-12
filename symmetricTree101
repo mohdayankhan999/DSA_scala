@@ -1,0 +1,20 @@
+/**
+ * Definition for a binary tree node.
+ * class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) {
+ *   var value: Int = _value
+ *   var left: TreeNode = _left
+ *   var right: TreeNode = _right
+ * }
+ */
+object Solution {
+    def isSymmetric(root: TreeNode): Boolean = {
+        def dfs(original: TreeNode,mirror: TreeNode): Boolean = {
+            (Option(original),Option(mirror)) match {
+                case (None,None) => true 
+                case (_,None) => false
+                case (None,_) => false
+                case (Some(original),Some(mirror)) => (original.value == mirror.value) && dfs(original.left,mirror.right) && dfs(original.right,mirror.left)
+            }}
+    dfs(root,root)
+    }
+}
