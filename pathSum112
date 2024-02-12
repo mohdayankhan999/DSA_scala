@@ -1,0 +1,22 @@
+/**
+ * Definition for a binary tree node.
+ * class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) {
+ *   var value: Int = _value
+ *   var left: TreeNode = _left
+ *   var right: TreeNode = _right
+ * }
+ */
+object Solution {
+    def hasPathSum(root: TreeNode, targetSum: Int): Boolean = {
+        def dfs(root: TreeNode, targetSum: Int): Boolean = {
+        (Option(root), targetSum) match 
+        {
+      case  (None, _ ) => false
+      case (Some(node), sum) if node.left == null && node.right == null => sum == node.value
+      case (Some(node), sum) => dfs(node.left, sum - node.value) || dfs(node.right, sum - node.value)}
+            
+        }
+        dfs(root,targetSum)
+        
+    }
+}
